@@ -159,7 +159,7 @@ class TicTacToeGui():
 
     def run(self):
         app = QApplication(sys.argv)
-        ex = App(MiniMaxTree)
+        ex = App(MiniMaxTree) #Se carga el archivo con reglas
         sys.exit(app.exec_())
 
 
