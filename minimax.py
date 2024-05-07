@@ -1,5 +1,5 @@
-from tictactoe import TicTacToe, winner
-from time_decorator import time
+from gato import Gato, winner
+from tiempo import Tiempo
 inf = float('infinity')
 
 class Node:
@@ -13,7 +13,7 @@ class Node:
     def add_child(self, node):
         self.children.append(node)
 
-@time('Tiempo de decisión:')
+@Tiempo('Tiempo de decisión:')
 class MiniMaxTree:
     def __init__(self, root):
         self.root = root if isinstance(root, Node) else Node(root)
@@ -74,5 +74,5 @@ def next_states(state, turn):
 
 
 if __name__ == '__main__':
-    g = TicTacToe(MiniMaxTree)
+    g = Gato(MiniMaxTree)
     g.run()

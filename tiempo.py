@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-def time(message):
+def Tiempo(message):
     def decorator(function):
         def wrapper(*args, **kwargs):
             i = datetime.now()

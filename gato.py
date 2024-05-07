@@ -14,7 +14,7 @@ class Random:
         return choice([i for i, x in enumerate(self.state) if x is None])
 
 
-class TicTacToe:
+class Gato:
     def __init__(self, npc_policy=Random):
         self.board = [None] * 9
         self.turn = randint(0, 1)
@@ -92,5 +92,5 @@ def bounded_numeric_input(message, start, end):
 
 
 if __name__ == '__main__':
-    g = TicTacToe()
+    g = Gato()
     g.run()
