@@ -10,6 +10,5 @@ git clone https://github.com/AnahiMolina/Gato.git
 pip install PyQt5
 ```
 
-3. **Interfaz Gráfica:**
-<br>
-Ejecutar archivo ```interfaz.py```
+> [!NOTE]
+> Para poder jugar, ejecuta el archivo **interfaz.py**
